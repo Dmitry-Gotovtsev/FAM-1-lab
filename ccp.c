@@ -35,7 +35,7 @@ int main(int argc, char *argv[]){
     else if (command == 2){
         FILE *table = fopen(argv[2], "r");
         if (table == NULL){
-            fprintf(stderr, "Error: file open error\n");
+            error(2);
             return 1;
         }
 
